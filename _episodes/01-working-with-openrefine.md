@@ -22,9 +22,9 @@ keypoints:
 ## Creating a Project
 
 
-Start the program. (Double-click on the openrefine.exe file (or google-refine.exe if using an older version). Java services will start on your machine, and OpenRefine will open in your browser).
+Start the program. (Double-click on the openrefine.exe file [or google-refine.exe if using an older version]. Java services will start on your machine, and OpenRefine will open in your browser).
 
-Launch OpenRefine (see [Getting Started with OpenRefine](http://www.datacarpentry.org/OpenRefine-ecology-lesson/00-getting-started/)).
+Launch OpenRefine (see [Getting Started with OpenRefine][http://www.datacarpentry.org/OpenRefine-ecology-lesson/00-getting-started/]).
 
 OpenRefine can import a variety of file types, including tab separated (`tsv`), comma separated (`csv`), Excel (`xls`, `xlsx`), JSON, XML, RDF as XML, Google Spreadsheets. See the [OpenRefine Importers page](https://github.com/OpenRefine/OpenRefine/wiki/Importers) for more information.
 
@@ -38,7 +38,7 @@ Once OpenRefine is launched in your browser, the left margin has options to `Cre
 1. click `Create Project` and select `Get data from` `This Computer`.  
 2. Click `Choose Files` and select the file `eebo.csv`. Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.  
-4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click `Update Preview` (bottom left). If this is the wrong file, click `<<Start Over` (upper left).  
+4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange and you would choose the correct separator in the box shown and click `Update Preview` (bottom left). If this is the wrong file, click `<<Start Over` (upper left).  
 5. If all looks well, click `Create Project>>` (upper right). 
 
 Note that at step 1, you could upload data in a standard form from a web address by selecting `Get data from` `Web Addresses (URLs)`. However, this won't work for all URLs.
@@ -82,10 +82,10 @@ along with a number representing how many times that value occurs in the column.
 > 
 > > ## Solution
 > > 
-> > 1. For the column `Date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 64 unique entries in
+> > 1. For the column `Date` select `Facet` > `Text facet`. A box will appear in the left panel showing that there are 64 unique entries in
 > > this column.  
-> > 2. By default, the column `Date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` > 
-> > `To number`. Doing `Facet` > `Numeric facet` creates a box in the left panel that shows a histogram of the number of 
+> > 2. By default, the column `Date` is formatted as Text. You can change the format by selecting `Edit cells` > `Common transforms` > 
+> > `To number`. Selecting `Facet` > `Numeric facet` creates a box in the left panel that shows a histogram of the number of 
 > > entries per year. Notice that the data is shown as a number, not a date. If you instead transform the column to a date, the 
 > > program will assume all entries are on January 1st of the year.   
 > > 3. After creating a facet, click `Sort by count` in the facet box. The year with the most observations is 1640. There are many data but among them are 1632, 1636. 
@@ -97,7 +97,7 @@ You can also use a custom facet to search by words in a column.
 
 1. Go to author
 2. Go facts, then select customized facets, and select word facet
-3. A box called place should appear in the left hand side. 
+3. A box named place should appear in the left side. 
 
 > ## Exercise
 >
@@ -172,7 +172,7 @@ It's common while exploring and cleaning a dataset to discover after you've made
 
 
 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
-2. Click on the step that you want to go back to, in this case the previous step. The added columns will disappear.
+2. Click on the step that you want to go back to, in this case, the previous step. The added columns will disappear.
 3. Notice that you can still click on the last step and make the columns reappear, and toggle back and forth between these states.
 4. Leave the dataset in the state in which the `Author` was clustered, but not yet split.
 
@@ -180,7 +180,7 @@ Important: If you skip this step, your solutions for later exercises will not be
 
 ## Trim Leading and Trailing Whitespace
 
-Words with spaces at the beginning or end are particularly hard for we humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. OpenRefine provides a tool to remove blank characters from the beginning and end of any entries that have them.
+Words with spaces at the beginning or end are particularly hard for human eyes to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. OpenRefine provides a tool to remove blank characters from the beginning and end of any entries that have them.
 
 
 1. In the header for the column `Author`, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
@@ -189,7 +189,7 @@ Words with spaces at the beginning or end are particularly hard for we humans to
 
 > ## Solution
 > 
-> Removing the leading white spaces means that each entry in this column has exactly one space (between the genus and species names). 
+> Removing the leading white spaces means that each entry in this column has exactly one space (between the first and second names). 
 > Therefore, when you split with space as the separator, you will get only two columns.
 {: .solution}
 
